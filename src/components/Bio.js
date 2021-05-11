@@ -1,6 +1,6 @@
-import React from 'react'
-import { Follow } from 'react-twitter-widgets'
-import styles from './Bio.module.scss'
+import React from "react";
+import { Follow } from "react-twitter-widgets";
+import styles from "./Bio.module.scss";
 
 const Bio = ({ config, expanded }) => (
   <>
@@ -10,15 +10,14 @@ const Bio = ({ config, expanded }) => (
       alt={config.userName}
     />
     <p>
-      Written by <strong>{config.userName}</strong> who lives and works in San
-      Francisco building useful things.
+      Escrito por <strong>{config.userName}</strong> en Buenos Aires, Argentina.
       {` `}
       <Follow
         username={config.userTwitter}
-        options={{ count: expanded ? true : 'none' }}
+        options={{ count: expanded ? true : "none" }}
       />
     </p>
   </>
-)
+);
 
-export default Bio
+export default Bio;
