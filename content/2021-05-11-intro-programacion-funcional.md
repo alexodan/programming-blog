@@ -104,4 +104,4 @@ Es cierto, y es natural pensar que esto es un tanto extremo, es inevitable (_y d
 
 Lo que debemos rescatar es que podemos aplicar las reglas de la programación funcional para aislar lo mejor que podamos las funciones puras de las impuras, ya que de esa manera vamos a poder hacer nuestro programa más escalable, y simple de refactorizar y de mantener. Es la razón por la cual la mayoría de las librerías o frameworks de front-end nos invitan a manejar el estado de nuestra aplicación por un lado y el renderizado de los componentes por otro, teniendo a ambos desacoplados.
 
-El próximo paso para seguir aprendiendo sobre programación funcional es conocer el rol de los [**callbacks y funciones de orden superior**](http://localhost:8000/callbacks-y-funciones-de-orden-superior)
+El próximo paso para seguir aprendiendo sobre programación funcional es conocer el rol de los [**callbacks y funciones de orden superior**](https://programandoconresaca.netlify.com/callbacks-y-funciones-de-orden-superior)
