@@ -1,5 +1,5 @@
 ---
-date: 2021-05-29
+date: 2021-06-01
 title: "Funciones Flecha (Arrow Functions)"
 cover: "https://unsplash.it/400/300/?random?TheFallenTime"
 slug: funciones-flecha
