@@ -2,7 +2,7 @@
 date: 2021-05-25
 title: "Aprendiendo a programar funcionalmente"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
-slug: aprendiendo-programacion-funcional-p1
+slug: aprendiendo-programacion-funcional-p-1
 categories:
   - JavaScript
   - Functional Programming
@@ -30,23 +30,23 @@ Estas cinco funciones son extremadamente poderosas, y son claves para entender c
 Hay varias formas de recorrer un array en JS, una bastante frecuente en muchos otros lenguajes también es usando un for loop con subíndices, por ejemplo:
 
 ```javascript
-function printNames() {
-  const names = ["Ben", "Claude", "Tiffa", "Jess"];
+const names = ["Ben", "Claude", "Tiffa", "Jess"];
+function printNames(names) {
   for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
   }
 }
 ```
 
-Esta forma de iterar sobre arrays no tiene nada de malo en sí, sin embargo a lo largo de estos ejercicios vamos a querer acostumbrarnos a un enfoque más declarativo, propio de la [programación funcional](https://programandoconresaca.netlify.com/intro-programacion-funcional) (en contraste al enfoque imperativo, con subíndices), y para eso usaremos el método `forEach` de `Array.prototype`.
+Esta forma de iterar sobre arrays no tiene nada de malo en sí, sin embargo vamos a querer acostumbrarnos a un enfoque más declarativo, propio de la [programación funcional](https://programandoconresaca.netlify.com/intro-programacion-funcional) (en contraste al enfoque imperativo, que usa subíndices), y para eso usaremos el método `forEach` de `Array.prototype`.
 
-El metodo [**forEach**](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) ejecuta la función indicada (callback) por cada elemento en el array.
+El método [**forEach**](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) ejecuta la función indicada (callback) por cada elemento en el array.
 
 ### Ejemplo
 
 ```javascript
-function printNames() {
-  const names = ["Ben", "Claude", "Tiffa", "Jess"];
+const names = ["Ben", "Claude", "Tiffa", "Jess"];
+function printNames(names) {
   names.forEach(function(name) {
     console.log(name);
   });
@@ -61,20 +61,11 @@ function(name) {
 }
 ```
 
-### Ejercicio 1 - Recorriendo un array
+Una aclaración, en el callback del ejemplo anterior usamos la notación tradicional usando la keyword `function`, pero también podemos usar perfectamente la notación abreviada de `arrow function`:
 
 ```javascript
-function printEven() {
-  const numbers = [1, 2, 3, 4, 5];
-  // TODO: imprimir SOLO los numeros pares usando forEach
-}
-```
-
-Una aclaración, en el callback del ejemplo anterior usamos la notacion tradicional usando la keyword `function`, pero también podemos usar perfectamente la notación abreviada de `arrow function`:
-
-```javascript
-function printEven() {
-  const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
+function printEven(numbers) {
   numbers.forEach(number => {
     if (number % 2 === 0) {
       console.log(number);
