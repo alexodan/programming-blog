@@ -2,7 +2,7 @@
 date: 2021-05-25
 title: "Aprendiendo a programar funcionalmente"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
-slug: aprendiendo-programacion-funcional-p1
+slug: aprendiendo-programacion-funcional-p-1
 categories:
   - JavaScript
   - Functional Programming
