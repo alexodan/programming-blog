@@ -20,9 +20,9 @@ tags:
 
 <p style="text-align: center;">Photo by <a href="https://unsplash.com/photos/KFIjzXYg1RM">Jeremy Bishop</a> on <a href="https://unsplash.com">Unsplash</a></p>
 
-### Que es programación funcional?
+### De que trata la programación funcional?
 
-Es uno de los tantos paradigmas de programación que existen. Cada paradigma propone un modelo mental, una formar de pensar a la programación, y va a influir radicalmente en cómo expresamos nuestro código y diseñamos nuestra aplicación.
+El paradigma funcional es uno de los tantos paradigmas de programación que existen. Cada uno propone un modelo mental, una formar de pensar a la programación, y va a influir radicalmente en cómo expresamos nuestro código y diseñamos nuestra aplicación.
 
 En un sentido más práctico, la programación funcional se basa fundamentalmente en programar a través de funciones (_yes I know_), pero dichas funciones deben cumplir con ciertas reglas! 👇
 
@@ -61,7 +61,7 @@ Tener una variable que es accesible y pueda ser modificada desde distintos scope
 const increaseBalance = account => {
   return {
     ...account,
-    balance: obj.balance + 1
+    balance: account.balance + 1
   };
 };
 const account = {
@@ -100,8 +100,12 @@ function saludar(nombre) {
 
 Produce un efecto colateral, ya que escribimos en la consola! (Booo...)
 
-Es cierto, y es natural pensar que esto es un tanto extremo, es inevitable (_y deseable_) que tarde o temprano tengamos funciones impuras en nuestro programa, después de todo si éste no hiciera requests o no escribiera en una base de datos, no serviría de mucho.
+Es cierto, es natural pensar que esto es un tanto extremo, es inevitable (_y de hecho, es deseable_) que tarde o temprano tengamos funciones impuras en nuestro programa, después de todo si creamos un programa que no hiciera requests o no escribiera en una base de datos, proablemente no serviría de mucho.
 
-Lo que debemos rescatar es que podemos aplicar las reglas de la programación funcional para aislar lo mejor que podamos las funciones puras de las impuras, ya que de esa manera vamos a poder hacer nuestro programa más escalable, y simple de refactorizar y de mantener. Es la razón por la cual la mayoría de las librerías o frameworks de front-end nos invitan a manejar el estado de nuestra aplicación por un lado y el renderizado de los componentes por otro, teniendo a ambos desacoplados.
+## Conclusión
 
-El próximo paso para seguir aprendiendo sobre programación funcional es conocer el rol de los [**callbacks y funciones de orden superior**](https://programandoconresaca.netlify.com/callbacks-y-funciones-de-orden-superior)
+Creo que lo que debemos rescatar es que podemos aplicar las reglas de la programación funcional para aislar lo mejor que podamos las funciones puras de las impuras, ya que de esa manera vamos a poder hacer nuestro programa más escalable, y simple de refactorizar y de mantener. Es la razón por la cual la mayoría de las librerías o frameworks de front-end nos invitan a manejar el estado de nuestra aplicación por un lado y el renderizado de los componentes por otro, teniendo a ambos desacoplados.
+
+El próximo paso para seguir aprendiendo sobre programación funcional es conocer el rol de los [**callbacks y funciones de orden superior**](https://programandoconresaca.netlify.com/callbacks-y-funciones-de-orden-superior).
+
+Gracias!
