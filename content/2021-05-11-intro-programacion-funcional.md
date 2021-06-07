@@ -44,7 +44,7 @@ Que una función sea pura significa que para un mismo input, siempre va a retorn
 ```js
 const increaseBalance = account => {
   account.balance += 1;
-  return obj;
+  return account;
 };
 const account = {
   balance: 100
