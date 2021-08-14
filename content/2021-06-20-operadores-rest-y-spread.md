@@ -15,7 +15,7 @@ tags:
 
 ## Composicion de objetos
 
-Con JavaScript podemos componer muy fácilmente objetos nuevos a partir de otros, lo cual resulta muy conveniente cuando necesitamos combinar propiedades o funcionalidades de distintos objetos para componer uno nuevo, para eso tenemos `Object.assign`:
+Con JavaScript podemos componer muy fácilmente objetos nuevos a partir de otros, lo cual resulta muy conveniente cuando necesitamos combinar propiedades o funcionalidades de distintos objetos, y para eso tenemos `Object.assign`:
 
 ```js
 const person = {
